@@ -1,0 +1,5 @@
+root - ERROR - _exit() missing required argument 'status' (pos 1)
+Traceback (most recent call last):
+  File "c:\Users\speed\OneDrive\Desktop\can_bus\FOC_gui\FOC_copy\main.py", line 20, in <module>
+    os._exit()
+TypeError: _exit() missing required argument 'status' (pos 1)
