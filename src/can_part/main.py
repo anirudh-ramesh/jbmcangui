@@ -58,6 +58,16 @@ class CanData(Thread):
         except: 
             pass
 
+    # def decodeMessages(self,filePath):
+    #     db = cantools.database.load_file(filePath)
+    #     can_bus = can.interface.Bus('can0', bustype='socketcan')
+    #     try:
+    #         message = can_bus.recv()
+    #         data = db.decode_message(message.arbitration_id, message.data)
+    #         return [data,message.timestamp]
+    #     except: 
+    #         pass
+
     def run(self):
         # Run the scheduler
         while not self.stopEvent.is_set():

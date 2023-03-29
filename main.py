@@ -16,6 +16,8 @@ if __name__ == '__main__':
         userInteractionMainWindow.setupUi(mainWindow)
         mainWindow.show()
         app.exec_()
+        for thread in enumerate(): 
+            print(thread.name)
         sys.exit()
     except Exception as exception:\
     logging.error(exception, exc_info=True)
